@@ -1,0 +1,83 @@
+.promo
+    min-height: 700px   
+    background: url(../img/main_bg.jpg) center (center/cover) no-repeat
+    padding-top: 39px
+    &__wrapper
+        display: flex
+        position: relative
+    &__descr
+        flex-direction: column
+        align-items: flex-start
+        margin-right: 183px
+    &__menu
+        display: inline
+        margin-left: 463px  
+        a 
+            font-size: 13px
+            font-weight: 400
+            text-align: right
+            color: #ffffff 
+            text-transform: uppercase
+            margin-right: 40px
+            &:nth-child(5)
+                margin-right: 0
+    &__title
+        margin-top: 133px
+        font-size: 42px
+        font-weight: 900
+        line-height: 1.14
+        text-align: left
+        color: #ffffff
+    &__subtitle
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        text-align: left
+        color: #ffffff
+        span
+            font-weight: 400
+    button
+        margin-top: 39px
+    &__carousel
+        position: relative
+        width: 434px
+        height: 569px
+        margin-top: 27px
+        img
+            width: 100%
+        .slick-prev, .slick-next
+            position: absolute
+            top: 81%
+            transform: translateY(-50%)
+            left: -200px
+            border: none
+            background: none
+            img
+                width: 6px
+                height: 11px
+        .slick-next
+            right: 518px
+            left: auto
+        .slick-dots
+            position: absolute
+            top: 87%
+            left: -178px
+            margin: 0 auto
+            width: 71px
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+            padding: 0
+            display: flex
+            button
+                display: none
+            li
+                margin-right: 3px
+                width: 11px
+                height: 11px
+                border: solid 1px #fff
+                border-radius: 100%
+                &:nth-child(5)
+                    margin-right: 0
+            .slick-active
+                background-color: #ffffff    
