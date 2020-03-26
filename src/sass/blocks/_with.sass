@@ -1,0 +1,50 @@
+.with
+    padding: 20px
+    min-height: 896px
+    &__arrow
+        position: relative
+        margin: 0 auto
+        margin-top: 90px
+        &:nth-child(2)
+            margin-top: 70px
+        &::before
+            content: ''
+            position: absolute
+            left: calc(50% - 4px)
+            display: block
+            width: 85px
+            height: 1px
+            background-color: #ececec
+            transform: rotate(-30deg)
+        &::after
+            content: ''
+            position: absolute
+            right: calc(50% - 8px)
+            display: block
+            width: 85px
+            height: 1px
+            background-color: #ececec
+            transform: rotate(30deg)
+    &__wrapper
+        margin-top: 79px    
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_content
+            position: relative
+            margin-right: 31px 
+            &:nth-child(3)
+                margin-right: 0
+    &__descr
+        width: 234px
+        text-align: center
+        position: absolute
+        bottom: 36px
+        left: 50%
+        transform: translateX(-50%)
+        &_question
+            font-size: 18px
+            font-weight: 300
+            color: #393939
+        &_answer
+            font-weight: 900
