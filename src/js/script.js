@@ -9,3 +9,11 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right_arrow.svg"></button>'
     });
 });
+
+$(document).ready(function(){
+    $('.solution__carousel').slick({
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left_arrow_big.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right_arrow_big.svg"></button>',
+        speed: 1200
+    });
+});
