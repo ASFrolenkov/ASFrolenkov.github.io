@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+$(window).load(function(){
     $('.solution__carousel').slick({
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left_arrow_big.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right_arrow_big.svg"></button>',
@@ -62,4 +62,23 @@ $('form').submit(function(e) {
         $('form').trigger('reset');
     });
     return false;
+});
+
+//hamburger
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.header-items'),
+    menuItem = document.querySelectorAll('.header-items'),
+    hamburger = document.querySelector('.header__hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('header__hamburger_active');
+        menu.classList.toggle('header-items_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('header__hamburger_active');
+            menu.classList.toggle('header-items_active');
+        })
+    })
 });
